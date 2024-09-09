@@ -172,7 +172,7 @@ def start_end_dates(start_date, end_date):
 
         return jsonify({"TMIN": tmin, "TAVG": tavg, "TMAX": tmax})
     else:
-        return jsonify({"error": "No data available for the specified start date."}), 404
+        return jsonify({"error": "No data available for the specified start & end dates."}), 404
 
 if __name__ == "__main__":
     app.run(debug=True)
